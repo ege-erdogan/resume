@@ -1,0 +1,109 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Ege Erdogan}
+\tagline{Computer Engineering Student}
+% \photo{3.3cm}{profile.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{ege@erdogan.dev}
+  \phone{+90 535 403 09 70}
+%  \mailaddress{Address, Street, 00000 County}
+  \location{Istanbul, Turkey}
+  \homepage{erdogan.dev}
+%  \twitter{@marissamayer}
+  \linkedin{ege-erdogan}
+  \github{ege-erdogan} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Objective}
+\textbf{Short-term:} To obtain a summer internship in the field of software development to gain practical experience and work with a team on challenging problems.
+
+\textbf{Long-term:} To improve myself as a software developer and work with technologies affecing people's lives for the good. 
+
+
+\cvsection{Experience}
+\cvevent{Software Development Intern}{Bitlo Cryptocurrency Exchange}{Feb. 2018 -- Apr. 2018}{Istanbul, Turkey}
+\begin{itemize}
+    \item 3-month software development internship.
+    \item Worked with Java and Spring Framework. 
+\end{itemize}
+
+
+\cvsection{Activities}
+\cvevent{Koc University Entrepreneurship Club}{Volunteered as a mentor for the Zero to One '19 Conference}{2018 -- }{}
+\cvevent{UAA Percussion Group}{Part of the school percussion group. Gave concerts in Brussels, Istanbul, Ankara, and Izmir. }{2013 -- 2016}{}
+
+
+\cvsection{Coursework}
+\cvproject{Computing}
+\begin{itemize}
+    \item Data Structures and Algorithms (\textit{taking})
+    \item Structure and Interpretation of Computer Programs
+    \item Advanced Programming (C, C++, Java)
+    \item Intro. to Programming (Java)
+\end{itemize}
+\cvproject{Math}
+\begin{itemize}
+    \item Introduction to Probability (\textit{taking})
+    \item Differential Equations
+    \item Multi-variable Calculus
+    \item Introduction to Linear Algebra
+    \item Calculus I
+\end{itemize}
+\cvproject{Extra-curricular}
+\begin{itemize}
+    \item Machine Learning MOOC on Coursera (\textit{taking})
+    \item Build a Modern Computer from First Principles: From Nand to Tetris MOOC on Coursera
+    \item SQL for Data Analytics and Business Intelligence course on Udemy
+\end{itemize}
+\smallskip
+
+\clearpage
+
+\nocite{*}
+
+\end{document}
