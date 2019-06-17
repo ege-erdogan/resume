@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.3)  3 MAY 2019 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.3)  17 JUN 2019 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -38,7 +38,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
 l.3 \cvevent
-            {Koc University}{Computer Engineering (\textit{cGPA = 3.28 / 4.0...
+            {Koc University}{Computer Engineering (\textit{cGPA = 3.37 / 4.0...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -154,7 +154,7 @@ Overfull \hbox (7.66663pt too wide) in paragraph at lines 2--5
 
 
 Overfull \hbox (18.3999pt too wide) in paragraph at lines 2--5
-\OT1/cmr/m/it/10 3.28
+\OT1/cmr/m/it/10 3.37
  []
 
 
@@ -1023,7 +1023,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no 4 in font nullfont!
 ! Undefined control sequence.
 l.36 \cvskill
-             {SQL, Git, Octave, Swift}{3}
+             {SQL, Git, MATLAB, Swift}{3}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1038,12 +1038,12 @@ Missing character: There is no G in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no , in font nullfont!
-Missing character: There is no O in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no B in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no S in font nullfont!
 Missing character: There is no w in font nullfont!
