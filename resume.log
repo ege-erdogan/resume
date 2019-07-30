@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.3)  10 JUL 2019 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.3)  30 JUL 2019 13:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1298,7 +1298,7 @@ LaTeX Font Warning: Font shape `OMS/lato-TLF/m/n' undefined
 (Font)              for symbol `textbullet' on input line 10.
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 10.
+(Font)              scaled to size 9.0pt on input line 21.
 ) [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -1321,7 +1321,7 @@ Package logreq Info: Writing requests to 'resume.run.xml'.
 Here is how much of TeX's memory you used:
  24570 strings out of 492649
  495674 string characters out of 6129623
- 929288 words of memory out of 5000000
+ 928288 words of memory out of 5000000
  28046 multiletter control sequences out of 15000+600000
  318132 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1336,7 +1336,7 @@ b></usr/local/texlive/2018/texmf-dist/fonts/type1/typoland/lato/Lato-BoldItalic
 pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.
 pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
 b>
-Output written on resume.pdf (1 page, 171493 bytes).
+Output written on resume.pdf (1 page, 169315 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
