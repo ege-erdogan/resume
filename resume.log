@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.3)  31 OCT 2019 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.3)  1 NOV 2019 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1269,37 +1269,49 @@ LaTeX Font Info:    Font shape `T1/lato-TLF/b/it' will be
 (Font)              scaled to size 8.0pt on input line 51.
 (./page1sidebar.tex
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 2.
+(Font)              scaled to size 17.28pt on input line 1.
 LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <17.28> not available
 
-(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 2.
+(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 1.
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 2.
+(Font)              scaled to size 17.28pt on input line 1.
 LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <10> not available
 (Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 3.
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 3.
-LaTeX Font Info:    Font shape `T1/lato-TLF/bx/it' in size <10> not available
-(Font)              Font shape `T1/lato-TLF/b/it' tried instead on input line 3
-.
-LaTeX Font Info:    Font shape `T1/lato-TLF/b/it' will be
-(Font)              scaled to size 10.0pt on input line 3.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 3.
 LaTeX Font Info:    Try loading font information for OMS+lato-TLF on input line
- 10.
-LaTeX Font Info:    No file OMSlato-TLF.fd. on input line 10.
+ 5.
+LaTeX Font Info:    No file OMSlato-TLF.fd. on input line 5.
 
 
 LaTeX Font Warning: Font shape `OMS/lato-TLF/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 10.
+(Font)              for symbol `textbullet' on input line 5.
 
+LaTeX Font Info:    Font shape `T1/lato-TLF/bx/it' in size <10> not available
+(Font)              Font shape `T1/lato-TLF/b/it' tried instead on input line 2
+7.
+LaTeX Font Info:    Font shape `T1/lato-TLF/b/it' will be
+(Font)              scaled to size 10.0pt on input line 27.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 21.
-) [1
+(Font)              scaled to size 9.0pt on input line 29.
+)
+LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <9> not available
+(Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 79
+.
+LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 79.
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <6> on input line 81.
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <5> on input line 81.
+LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 81.
+ [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./resume.aux)
@@ -1319,11 +1331,11 @@ Package logreq Info: Writing requests to 'resume.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24570 strings out of 492649
- 495674 string characters out of 6129623
- 927288 words of memory out of 5000000
- 28046 multiletter control sequences out of 15000+600000
- 318132 words of font info for 45 fonts, out of 8000000 for 9000
+ 24588 strings out of 492649
+ 495879 string characters out of 6129623
+ 929288 words of memory out of 5000000
+ 28055 multiletter control sequences out of 15000+600000
+ 364339 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,5n,91p,1131b,788s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lato/a_w6akef.enc}{/usr/l
@@ -1336,7 +1348,7 @@ b></usr/local/texlive/2018/texmf-dist/fonts/type1/typoland/lato/Lato-BoldItalic
 pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.
 pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
 b>
-Output written on resume.pdf (1 page, 168960 bytes).
+Output written on resume.pdf (1 page, 165914 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
