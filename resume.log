@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.3)  13 JAN 2020 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.3)  24 JAN 2020 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1293,12 +1293,12 @@ LaTeX Font Warning: Font shape `OMS/lato-TLF/m/n' undefined
 (Font)              for symbol `textbullet' on input line 5.
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/bx/it' in size <10> not available
-(Font)              Font shape `T1/lato-TLF/b/it' tried instead on input line 2
-7.
+(Font)              Font shape `T1/lato-TLF/b/it' tried instead on input line 3
+3.
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/it' will be
-(Font)              scaled to size 10.0pt on input line 27.
+(Font)              scaled to size 10.0pt on input line 33.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 29.
+(Font)              scaled to size 9.0pt on input line 35.
 )
 LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <9> not available
 (Font)              Font shape `T1/lato-TLF/b/n' tried instead on input line 79
@@ -1333,7 +1333,7 @@ Package logreq Info: Writing requests to 'resume.run.xml'.
 Here is how much of TeX's memory you used:
  24588 strings out of 492649
  495879 string characters out of 6129623
- 928288 words of memory out of 5000000
+ 929288 words of memory out of 5000000
  28055 multiletter control sequences out of 15000+600000
  364339 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1348,7 +1348,7 @@ b></usr/local/texlive/2018/texmf-dist/fonts/type1/typoland/lato/Lato-BoldItalic
 pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.
 pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
 b>
-Output written on resume.pdf (1 page, 166049 bytes).
+Output written on resume.pdf (1 page, 167985 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
