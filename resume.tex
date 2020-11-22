@@ -1,111 +1,246 @@
-\documentclass[10pt,a4paper,ragged2e]{altacv}
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
 
-\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\documentclass[letterpaper,11pt]{article}
 
-\ifxetexorluatex
-  % If using xelatex or lualatex:
-  \setmainfont{Carlito}
-\else
-  % If using pdflatex:
-  \usepackage[utf8]{inputenc}
-  \usepackage[T1]{fontenc}
-  \usepackage[default]{lato}
-\fi
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
 
-% Change the colours if you want to
-\definecolor{VividPurple}{HTML}{000000}
-\definecolor{SlateGrey}{HTML}{2E2E2E}
-\definecolor{LightGrey}{HTML}{2E2E2E}
-\colorlet{heading}{VividPurple}
-\colorlet{accent}{VividPurple}
-\colorlet{emphasis}{SlateGrey}
-\colorlet{body}{LightGrey}
 
-% Change the bullets for itemize and rating marker
-% for \cvskill if you want to
-\renewcommand{\itemmarker}{{\small\textbullet}}
-\renewcommand{\ratingmarker}{\faCircle}
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
 
-%% sample.bib contains your publications
-\addbibresource{sample.bib}
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
 
-\begin{document}
-\name{Ege Erdogan}
-\tagline{Computer Engineering Student}
-% \photo{3.3cm}{profile.jpg}
-\personalinfo{%
-  % Not all of these are required!
-  % You can add your own with \printinfo{symbol}{detail}
-  \email{ege@erdogan.dev}
-  \phone{+90 535 403 09 70}
-  \location{Istanbul, Turkey}
-  \homepage{erdogan.dev}
-  \linkedin{ege-erdogan}
-  \github{ege-erdogan} 
-  \\~\\
-  \printinfo{}{\textit{Last updated June 12, 2020. For the latest version, see: https://erdogan.dev/resume}}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
 }
 
-%% Make the header extend all the way to the right, if you want.
-\begin{fullwidth}
-\makecvheader
-\end{fullwidth}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
 
-%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
-\AtBeginEnvironment{itemize}{\small}
+\newcommand{\schoolSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #5} \\
+      \textit{\small#4}
+    \end{tabular*}\vspace{-5pt}
+}
 
-%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
-%% You can always just use \marginpar{...} if you do
-%% not need to align the top of the contents to any
-%% \cvsection title in the "main" bar.
-\cvsection[page1sidebar]{Objective}
-\textbf{Short-term:} To obtain a summer internship in the field of software development to gain practical experience and work with a team on challenging problems.
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
 
-\textbf{Long-term:} To improve myself as a software developer and work with technologies affecting people's lives for the good. 
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
 
-\cvsection{Education}
-\cvevent{Koc University}{Computer Engineering (\textit{GPA = 3.46 / 4.0})}{ 2017 -- }{}
-\cvevent{Uskudar American Academy}{High School}{ 2012 -- 2017}{}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\cvsection{TECHNICAL SKILLS}
-\cvproject{Languages}
-\begin{itemize}
-\item Java, Ruby, Python, JavaScript, Racket, SQL, HTML/CSS, MIPS Assembly, MATLAB
-\end{itemize}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{
+  % \begin{minipage}{15cm}\vspace{3pt}
+  \begin{itemize}
+}
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-4pt}
+  % \end{minipage}
+}
 
-\cvproject{Tools / Platforms}
-\begin{itemize}
-\item \textbf{Software development: }Git, UML, design patterns
-\item \textbf{Cloud platforms: }AWS, IBM Cloud, Heroku
-\item \textbf{Other: }\LaTeX
-\end{itemize}
-
-\cvproject{Frameworks/Libraries}
-\begin{itemize}
-\item \textbf{Back-end: }Spring, Rails
-\item \textbf{Front-end: }Bootstrap, Semantic UI
-\end{itemize}
-
-\cvproject{Areas of interest}
-\begin{itemize}
-\item Web development, computer networks, machine learning, theoretical computer science
-\end{itemize}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\cvsection{Activities}
-\cvevent{Koc University Entrepreneurship Club}{Volunteered as a mentor for the Zero to One '19 Conference.}{2018 -- }{}
-\cvevent{UAA Percussion Group}{Part of the school percussion group. Gave concerts in Brussels, Istanbul, Ankara, and Izmir. }{2013 -- 2016}{}
+\begin{document}
 
-\cvsection{Hobbies}
-\begin{itemize}
-\item Maintaining a blog where I occasionally write about topics that interest me.
-\item Like to read about the history of computing.
-\item Basketball and cycling fan.
-\end{itemize}
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
-\clearpage
+% \begin{center}
+    \textbf{\huge \scshape Ege Erdoğan} 
+    \small +905354030970 $|$ \href{mailto:ege@erdogan.dev}{\underline{ege@erdogan.dev}} $|$ 
+    \href{https://linkedin.com/in/ege-erdogan}{\underline{linkedin/ege-erdogan}} $|$
+    \href{https://github.com/ege-erdogan}{\underline{github/ege-erdogan}}
+    \vspace{8pt}
+% \end{center}
 
-\nocite{*}
+\small{Updated \today. See \href{https://erdogan.dev/resume}{\underline{erdogan.dev/resume}} for latest version.} \vspace{-7pt}
 
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \schoolSubheading
+      {Koç University (GPA: 3.46)}{Istanbul, Turkey}
+      {Double major in Computer Engineering \& Mathematics}
+      {Cryptography, Security, and Theory specialization program}{2017 -- Present}
+    \resumeSubheading
+      {Üsküdar American Academy}{Istanbul, Turkey}
+      {High School}{2012 -- 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Undergraduate Teaching Assistant}{Sep. 2020 -- Present}
+    {Koç University}{Istanbul, Turkey}
+  \resumeItemListStart
+    \resumeItem{Conducting weekly lab sessions, holding weekly office hours, and helping grade assignments \\ for the COMP 125: Introduction to Programming with Python course.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Research Intern}{July 2020 -- Present}
+    {Koç University}{Istanbul, Turkey}
+  \resumeItemListStart
+    \resumeItem{Working on a research project concerning the security of privacy-preserving machine \\ learning technologies.}
+    \resumeItem{Using Python and various machine learning libraries. Writing code for implementing \\ privacy-preserving machine learning methods and attacks against them.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Software Development Intern}{July 2020 -- Aug. 2020}
+    {Proteams}{Istanbul, Turkey}
+  \resumeItemListStart
+    \resumeItem{Worked towards improvements for different parts of a mobile application, including its \\ back-end server, database, and admin panel.}
+    \resumeItem{Java, Spring, JavaScript, Angular, PostgreSQL}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Summer Intern}{July 2019}
+    {IBM}{Istanbul, Turkey}
+  \resumeItemListStart
+    \resumeItem{Worked as a summer intern within the IBM Cloud \& Cognitive team.}
+    \resumeItem{Built a chatbot to answer questions by IBM new hires as a group with the other interns.}
+    \resumeItem{Developed a music generation system using neural networks and built a web interface for it \\ with the other interns.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Software Development Intern}{Feb. 2018 -- April 2018}
+    {Bitlo Cryptocurrency Exchange}{Istanbul, Turkey}
+  \resumeItemListStart
+    \resumeItem{Worked with Java and the Spring framework on web applications.}
+  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Other Projects}
+    \resumeSubHeadingListStart
+      % TODO: add rss email and journal projects
+      \resumeProjectHeading
+          {\textbf{Brick-breaking Game} $|$ \emph{Java, Swing, MongoDB}}{Fall 2019}
+          \resumeItemListStart
+            \resumeItem{Developed a brick-breaking game as a group of 5 for the Software Engineering course at Koc University.}
+            \resumeItem{Worked with Java Swing libraries for the visuals, and used MongoDB to save user statistics and save games.}
+            \resumeItem{Gained experience with software development tools and methodologies such as agile development, UML diagrams, and design patterns.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Web-based News Reader} $|$ \emph{Ruby, Ruby on Rails, JavaScript}}{2019}
+          \resumeItemListStart
+            \resumeItem{Developed a web-based reader scraping and displaying content from Hacker News, Slashdot, and the r/programming subreddit as a solo project.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Course Projects}}{2017 -- }
+          \resumeItemListStart
+            \resumeItem{Various course projects including Computer Networks, Operating Systems, and Digital Design courses among others can be found at \href{https://github.com/ege-erdogan/coursework}{\underline{https://github.com/ege-erdogan/coursework}}.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, JavaScript, Ruby, C, Scheme} \\
+     \textbf{Frameworks/Libraries} \\
+     \ \ \ \ \textbf{Machine learning}{: PyTorch, Numpy, Matplotlib, scikit-learn} \\
+     \ \ \ \ \textbf{Web}{: Ruby on Rails, Spring, Bootstrap} \\
+     \textbf{Tools/Platforms}{: Git, UML, AWS, IBM Cloud, design patterns} \\
+     \textbf{Areas of interest}{: Machine learning, cryptography, web development, computer networks, theoretical CS}
+    }}
+ \end{itemize}
+
+%  \section{Activities}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%    \item hi there
+%  \end{itemize}
+
+
+%-------------------------------------------
 \end{document}
