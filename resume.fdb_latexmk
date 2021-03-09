@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1611767116 "/Users/egeerdogan/Desktop/github-sites/resume/resume.tex" "/Users/egeerdogan/Desktop/github-sites/resume/resume.pdf" "resume" 1611767116
-  "/Users/egeerdogan/Desktop/github-sites/resume/resume.aux" 1611767116 1102 ad11c5202d7a6f12525adf0246345574 ""
-  "/Users/egeerdogan/Desktop/github-sites/resume/resume.tex" 1611767115 9530 52cb3333de21ebbf83d9787e749d1b3f ""
+["pdflatex"] 1615314434 "/Users/egeerdogan/Desktop/github-sites/resume/resume.tex" "/Users/egeerdogan/Desktop/github-sites/resume/resume.pdf" "resume" 1615314435
+  "/Users/egeerdogan/Desktop/github-sites/resume/resume.aux" 1615314435 1102 ad11c5202d7a6f12525adf0246345574 ""
+  "/Users/egeerdogan/Desktop/github-sites/resume/resume.tex" 1615314429 9813 f96f3fe77ed84a3144fe5cd0d06ae0eb ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1480098701 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -64,14 +64,14 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1551639979 4220279 aef272b3e696ac4b53175dbc82708071 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "resume.aux" 1611767116 1102 ad11c5202d7a6f12525adf0246345574 ""
-  "resume.out" 1611767116 228 0d6b42610a34b6ddde7f31ce54504e14 ""
-  "resume.tex" 1611767115 9530 52cb3333de21ebbf83d9787e749d1b3f ""
+  "resume.aux" 1615314435 1102 ad11c5202d7a6f12525adf0246345574 ""
+  "resume.out" 1615314435 228 0d6b42610a34b6ddde7f31ce54504e14 ""
+  "resume.tex" 1615314429 9813 f96f3fe77ed84a3144fe5cd0d06ae0eb ""
   (generated)
-  "resume.pdf"
-  "resume.log"
-  "/Users/egeerdogan/Desktop/github-sites/resume/resume.log"
-  "/Users/egeerdogan/Desktop/github-sites/resume/resume.pdf"
-  "resume.aux"
   "/Users/egeerdogan/Desktop/github-sites/resume/resume.aux"
+  "/Users/egeerdogan/Desktop/github-sites/resume/resume.pdf"
+  "resume.pdf"
   "resume.out"
+  "resume.log"
+  "resume.aux"
+  "/Users/egeerdogan/Desktop/github-sites/resume/resume.log"
