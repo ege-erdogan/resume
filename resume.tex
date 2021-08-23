@@ -18,7 +18,18 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{ulem}
+\usepackage{contour}
+
 \input{glyphtounicode}
+
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
 
 
 %----------FONT OPTIONS----------
@@ -129,23 +140,25 @@
 
 % \begin{center}
     \textbf{\huge \scshape Ege Erdoğan} 
-    \small \href{mailto:ege@erdogan.dev}{\underline{ege@erdogan.dev}} $|$ 
-    \href{https://linkedin.com/in/ege-erdogan}{\underline{linkedin/ege-erdogan}} $|$
-    \href{https://github.com/ege-erdogan}{\underline{github/ege-erdogan}}
+    \small \href{mailto:ege@erdogan.dev}{\myuline{ege@erdogan.dev}} $|$ 
+    \href{https://erdogan.dev}{\myuline{Homepage}} $|$
+    \href{https://linkedin.com/in/ege-erdogan}{\myuline{LinkedIn}} $|$
+    \href{https://github.com/ege-erdogan}{\myuline{GitHub}} $|$
+    \href{https://scholar.google.com/citations?user=HjcFsdcAAAAJ&hl=en&oi=ao}{\myuline{Google Scholar}}
     \vspace{8pt}
 % \end{center}
 
-\small{Updated \today. See \href{https://erdogan.dev/resume}{\underline{erdogan.dev/resume}} for latest version.} \vspace{-7pt}
+\small{Updated \today. See \href{https://erdogan.dev/resume}{\myuline{erdogan.dev/resume}} for latest version.} \vspace{-7pt}
 
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \schoolSubheading
-      {Koç University (GPA: 3.53/4)}{Istanbul, Turkey}
+      {Koç University (GPA: 3.57/4)}{Istanbul, Turkey}
       {Double major in Computer Engineering \& Mathematics}
-      {Cryptography, Security, and Theory specialization program $(3.88/4)$}{2017 -- Present}
-      {Dean's Honor Roll (3 semesters) and Vehbi Koc Scholar (1 semester) for academic achievement.}
+      {Cryptography, Security, and Theory specialization program $(3.91/4)$}{2017 -- Present}
+      {Dean's Honor Roll (3 semesters) and Vehbi Koc Scholar (2 semesters) for academic achievement.}
     \resumeSubheading
       {Üsküdar American Academy}{Istanbul, Turkey}
       {High School}{2012 -- 2017}
@@ -157,19 +170,20 @@
   \resumeSubHeadingListStart
 
   \resumeSubheading
-    {Undergraduate Tutor}{Feb. 2021 -- Present}
-    {Koç University}{Istanbul, Turkey}
+    {Research Intern}{July 2020 -- Present}
+    {Koç University Cryptography, Security, and Privacy Research Group}{Istanbul, Turkey}
   \resumeItemListStart
-    \resumeItem{Holding weekly tutoring sessions helping with course administration\\ for the \textit{Computer Networks} course.}
+    \resumeItem{\textbf{Supervisor:} Assoc. Prof. Alptekin Küpçü}
+    \resumeItem{Working on the design and implementation of novel offensive and defensive methods involving \\ privacy-preserving machine learning systems.}
+    \resumeItem{Produced two first-author papers (see Research section below), currently under review; one is \\ a set of attacks targeting data and model confidentiality of split learning clients, the other is a method by which \\ split learning clients can detect and prevent \textit{training-hijacking} attacks.}
+    \resumeItem{Using Python and various ML libraries to implement privacy-preserving machine learning \\ methods and attacks against them. }
   \resumeItemListEnd
 
   \resumeSubheading
-    {Research Intern}{July 2020 -- Present}
+    {Undergraduate Tutor}{Feb. 2021 -- June 2021}
     {Koç University}{Istanbul, Turkey}
   \resumeItemListStart
-    \resumeItem{\textbf{Supervisor:} Assoc. Prof. Alptekin Küpçü}
-    \resumeItem{Working on a research project concerning the security of privacy-preserving machine \\ learning technologies.}
-    \resumeItem{Using Python and various ML libraries to implement privacy-preserving machine learning \\ methods and attacks against them. }
+    \resumeItem{Held weekly tutoring sessions and helped with course administration\\ for the \textit{Computer Networks} course for the Spring 2021 semester.}
   \resumeItemListEnd
 
   \resumeSubheading
@@ -206,9 +220,28 @@
   \resumeSubHeadingListEnd
 
 
+%-----------PUBLICATIONS-----------
+\section{Research}
+\begin{enumerate}
+    \item \textbf{Ege Erdogan}, Alptekin Kupcu, A. Ercument Cicek. “SplitGuard: Detecting and Mitigating Training-Hijacking Attacks in Split Learning”, 2021; \href{https://arxiv.org/abs/2108.09052}{\myuline{arXiv:2108.09052}}. \textit{[Preprint. Under review.]}
+
+    \item \textbf{Ege Erdogan}, Alptekin Kupcu, A. Ercument Cicek. “UnSplit: Data-Oblivious Model Inversion, Model Stealing, and Label Inference Attacks Against Split Learning”, 2021; \href{https://arxiv.org/abs/2108.09033}{\myuline{arXiv:2108.09033}}. \textit{[Preprint. Under review.]}
+    
+    \item \textbf{Ege Erdogan}, Can Arda Aydin, Oznur Ozkasap, Waris Gill. “Demo -- Zelig: Customizable Blockchain Simulator”, 2021; \href{https://arxiv.org/abs/2107.07972}{\myuline{arXiv:2107.07972}}. \textit{[Accepted for presentation at the 40th International Symposium on Reliable Distributed Systems (SRDS 2021)]}
+\end{enumerate}
+
+
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Zelig: Customizable Blockchain Simulator} (work-in-progress) $|$ \emph{Python}}{}
+          \resumeItemListStart
+            \resumeItem{Building a blockchain simulator in Python with the core goals of customizability and extensibility, aiming to address the shortcomings of existing simulators.}
+            \resumeItem{Started as a term project for the Distributed Systems course and resumed as independent work.}
+            \resumeItem{Accepted to be presented at the demo session of the 40th International Symposium on Reliable Distributed Systems (SRDS 2021).}
+          \resumeItemListEnd
+          
       \resumeProjectHeading
           {\textbf{Brick-breaking Game} $|$ \emph{Java, Swing, MongoDB}}{}
           \resumeItemListStart
@@ -226,7 +259,7 @@
       \resumeProjectHeading
           {\textbf{Course Projects}}{}
           \resumeItemListStart
-            \resumeItem{Various course projects including Computer Networks, Operating Systems, and Digital Design courses among others can be found at \href{https://github.com/ege-erdogan/coursework}{\underline{https://github.com/ege-erdogan/coursework}}.}
+            \resumeItem{Various course projects including Distributed Systems, AI/ML, Computer Security, Computer Networks, Operating Systems, and Digital Design courses among others can be found at \href{https://github.com/ege-erdogan/coursework}{\myuline{https://github.com/ege-erdogan/coursework}}.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -254,16 +287,17 @@
 
 %
 %-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
+\section{Skills \& Interests}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: Java, Python, JavaScript, Ruby, C, Scheme} \\
+     \textbf{Human Languages}{: Turkish (native), English (fluent), German (beginner)  \\
+     \textbf{Computer Languages}{: Python, Java, JavaScript, Go, Ruby, C, Scheme} \\
      \textbf{Frameworks/Libraries} \\
-     \ \ \ \ \textbf{Machine learning}{: PyTorch, Numpy, Matplotlib, scikit-learn} \\
+     \ \ \ \ \textbf{Machine learning/Statistics}{: PyTorch, Numpy, Matplotlib, scikit-learn} \\
      \ \ \ \ \textbf{Web}{: Ruby on Rails, Spring, Bootstrap} \\
-     \textbf{Tools/Platforms}{: Git, UML, AWS, IBM Cloud, design patterns} \\
-     \textbf{Areas of interest}{: Machine learning, cryptography, web development, computer networks, theoretical CS}
-    }}
+     \textbf{Areas of interest}{: Security \& privacy, machine learning, cryptography, web development, theoretical CS} \\ 
+    %  \textbf{Hobbies}{: Cycling, playing basketball, cooking (not necessarily at the same time)}
+    }}}
  \end{itemize}
 
 
